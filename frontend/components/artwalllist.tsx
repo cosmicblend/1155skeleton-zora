@@ -21,6 +21,7 @@ const ArtWallList = () => {
           contractAddress={artItem.contractAddress}
           tokenID={artItem.tokenID}
           id={artItem.id.toString()}
+          artistLink={artItem.artistLink}
         />
       ))}
     </SimpleGrid>
