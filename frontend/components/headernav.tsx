@@ -2,7 +2,7 @@ import React from 'react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { 
     Flex, 
-    Box, 
+    Stack, 
     Text, 
     Center
 } from '@chakra-ui/react';
@@ -24,9 +24,9 @@ const HeaderNav = () => {
             <Center>
                 <Text fontSize="lg" fontWeight="bold">BrandName</Text>
             </Center>
-            <Box spacing={4} ml="auto">
+            <Stack spacing={4} ml="auto">
                 <ConnectButton />
-            </Box>
+            </Stack>
         </Flex>
     );
   };
