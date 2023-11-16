@@ -1,5 +1,5 @@
 import React from 'react';
-// import MintButton from './mintButton';
+import MintButton from './mintButton';
 import { 
     Image,
     Stack,
@@ -44,11 +44,11 @@ interface ArtWallProps {
       />
       <Stack>
         <Heading as='h3' fontSize='h5' fontWeight='aecBlack'>{artTitle}</Heading>
-        <Heading as='h4' fontSize='h6'>By: <Link href={artistLink} isExternal>{artistName}</Link></Heading>
+        <Heading as='h4' fontSize='h6'>By: <Link href={artistLink} isExternal color='#DF257E' textDecoration='underline'>{artistName}</Link></Heading>
         <Text my={2}>{description}</Text>
       </Stack>
       <Stack my={2}>
-        <Text>mint button here</Text>
+        <MintButton />
       </Stack>
       <Stack my={4}>
         <Button>ON ZORA</Button>

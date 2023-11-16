@@ -10,7 +10,77 @@
     "artistLink": "https://www.takeupspace.io/"
   },
   {
-      "id": 2,
+    "id": 2,
+    "artTitle": "Earthly Bodies",
+    "artistName": "Alexandra Obochi",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeih7jqpk22pvcdpfr2edugs5ubbv42oy26oi57q65spxsxeqwmayhm",
+    "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
+    "contractAddress": "",
+    "tokenID": "1",
+    "artistLink": "https://twitter.com/Fatshionistaa"
+  },
+  {
+    "id": 3,
+    "artTitle": "CELESTIAL TECH | SUN LESSON",
+    "artistName": "Laura Helen",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibvaun2msbnarjeztx63kpchr5ekkwlgax6lzv4mpjxl2vxha7kcy",
+    "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
+    "contractAddress": "0xFB6e057CBE4Cf535dc64d1F77d4a4718888248d5",
+    "tokenID": "1",
+    "artistLink": "https://zora.co/birdsoar.eth"
+  },
+  {
+    "id": 4,
+    "artTitle": "Web3nnections",
+    "artistName": "qabqabqab",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeia3pwfpnif66zyqhpqckjagtsljy6v3p4homlatww4z7wosbsd5ee",
+    "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
+    "contractAddress": "",
+    "tokenID": "1",
+    "artistLink": "https://zora.co/qabqabqab.eth"
+  },
+  {
+    "id": 5,
+    "artTitle": "Bridges Across Bytes",
+    "artistName": "Ebuka Mordi",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiehn42qligqhnjlvc42ge5ljcgstziswvixmqlvjey7asu2k6px6i",
+    "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
+    "contractAddress": "",
+    "tokenID": "1",
+    "artistLink": "https://ebukamordi.com/"
+  },
+  {
+    "id": 6,
+    "artTitle": "Conjoined Love",
+    "artistName": "Mihr",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeid3ywe6scds7cvrrxfemqedekse7inzdrbt7tkr5m7imrkk3yw4xa",
+    "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
+    "contractAddress": "",
+    "tokenID": "1",
+    "artistLink": ""
+  },
+  {
+    "id": 7,
+    "artTitle": "A Dream Fantasy Core",
+    "artistName": "arbstein",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeieak6275jddcdxv6mhqlw55wrypg4rscmsblr3pkbliwm6ezvt22q",
+    "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
+    "contractAddress": "0xb03D513B0a159296F7dcc5a99A9795C9CA7AdeD6",
+    "tokenID": "1",
+    "artistLink": "https://zora.co/arbstein.eth"
+  },
+  {
+    "id": 8,
+    "artTitle": "UR FAV CHEAT CODE",
+    "artistName": "Quetzal Gelo",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiczzy76pvgc2xocd47qvnv2mxrtg6f3dqy464t7rr42xyb5ld62ha",
+    "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
+    "contractAddress": "0x408b73f569E76a4D92d72526D5e64f17cC1cf4aC",
+    "tokenID": "1",
+    "artistLink": "https://zora.co/0xa51fc978850c373dd965ab7d1edf24692d0d0d61"
+  },
+  {
+      "id": 9,
       "artTitle": "HEALWARE",
       "artistName": "Angel Darmella",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeigklr24a5gvxaugyosxdxlmsifp2k7dnftubpbcj5oaz7l37sfu5y",
@@ -20,84 +90,14 @@
       "artistLink": "https://www.angeldarmella.com/aiphotography"
     },
     {
-      "id": 3,
-      "artTitle": "Bridges Across Bytes",
-      "artistName": "Ebuka Mordi",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiehn42qligqhnjlvc42ge5ljcgstziswvixmqlvjey7asu2k6px6i",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1",
-      "artistLink": "https://ebukamordi.com/"
-    },
-    {
-      "id": 4,
-      "artTitle": "tech is my friend",
-      "artistName": "Naomi Metzger",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeihays4dmduizycwhsjan74m6xjzfaekfciqslfs5lhovvcstskyzu",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1",
-      "artistLink": "https://twitter.com/NaomiMetzgerTJ"
-    },
-    {
-      "id": 5,
-      "artTitle": "Latent Lovers",
-      "artistName": "Moises Sanabria",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibbx6yhu2r6tnn5dev5aatl7fpj7muobxalcntmd3fulgogcen6ry",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1",
-      "artistLink": "https://twitter.com/moisesnotfound"
-    },
-    {
-      "id": 6,
-      "artTitle": "A Dream Fantasy Core",
-      "artistName": "arbstein",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeieak6275jddcdxv6mhqlw55wrypg4rscmsblr3pkbliwm6ezvt22q",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "0xb03D513B0a159296F7dcc5a99A9795C9CA7AdeD6",
-      "tokenID": "1",
-      "artistLink": "https://zora.co/arbstein.eth"
-    },
-    {
-      "id": 7,
-      "artTitle": "Earthly Bodies",
-      "artistName": "Alexandra Obochi",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeih7jqpk22pvcdpfr2edugs5ubbv42oy26oi57q65spxsxeqwmayhm",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1",
-      "artistLink": "https://twitter.com/Fatshionistaa"
-    },
-    {
-      "id": 8,
-      "artTitle": "CELESTIAL TECH | SUN LESSON",
-      "artistName": "Laura Helen",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibvaun2msbnarjeztx63kpchr5ekkwlgax6lzv4mpjxl2vxha7kcy",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "0xFB6e057CBE4Cf535dc64d1F77d4a4718888248d5",
-      "tokenID": "1",
-      "artistLink": "https://zora.co/birdsoar.eth"
-    },
-    {
-      "id": 9,
-      "artTitle": "Li Gaia Si",
-      "artistName": "Lill Terror",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibvrxmy3wt2r77xwooxh2jvyvcqd5fn4x6t7zhena3n52rqfqphiu",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "0x6076430E383A402B92A1eA7aB8c90495a6226fE4",
-      "tokenID": "1",
-      "artistLink": "https://zora.co/terrorzinart.eth"
-    },
-    {
       "id": 10,
-      "artTitle": "Web3nnections",
-      "artistName": "qabqabqab",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeia3pwfpnif66zyqhpqckjagtsljy6v3p4homlatww4z7wosbsd5ee",
+      "artTitle": "HOODEMPIRE",
+      "artistName": "Draco",
+      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeifqrmr3gkfclw6xy5k3p4s5ag7mfbkydppy737qbc6c3dlsakbd5e",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
       "tokenID": "1",
-      "artistLink": "https://zora.co/qabqabqab.eth"
+      "artistLink": "https://zora.co/0x359e3b5c9808e89e1a7f6337e47a54484bf92c27"
     },
     {
       "id": 11,
@@ -111,26 +111,16 @@
     },
     {
       "id": 12,
-      "artTitle": "Primaveral",
-      "artistName": "Kavl",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeigkukk7m7bnzmjomr323wmdfjdwbw7hexfqi327auajooaf6gtlgu",
+      "artTitle": "Li Gaia Si",
+      "artistName": "Lill Terror",
+      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibvrxmy3wt2r77xwooxh2jvyvcqd5fn4x6t7zhena3n52rqfqphiu",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
+      "contractAddress": "0x6076430E383A402B92A1eA7aB8c90495a6226fE4",
       "tokenID": "1",
-      "artistLink": ""
+      "artistLink": "https://zora.co/terrorzinart.eth"
     },
     {
       "id": 13,
-      "artTitle": "UR FAV CHEAT CODE",
-      "artistName": "Quetzal Gelo",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiczzy76pvgc2xocd47qvnv2mxrtg6f3dqy464t7rr42xyb5ld62ha",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "0x408b73f569E76a4D92d72526D5e64f17cC1cf4aC",
-      "tokenID": "1",
-      "artistLink": "https://zora.co/0xa51fc978850c373dd965ab7d1edf24692d0d0d61"
-    },
-    {
-      "id": 14,
       "artTitle": "NEKRA: Iteration Artifact 0.3 ",
       "artistName": "Lori Baldwin",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeifjye7r4lzjp5jcp7aa5b5d6uzbvvbsshagmiu46bgdc5gt5vzary",
@@ -140,24 +130,14 @@
       "artistLink": "https://zora.co/iamloribaldwin.eth"
     },
     {
-      "id": 15,
-      "artTitle": "Conjoined Love",
-      "artistName": "Mihr",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeid3ywe6scds7cvrrxfemqedekse7inzdrbt7tkr5m7imrkk3yw4xa",
+      "id": 14,
+      "artTitle": "tech is my friend",
+      "artistName": "Naomi Metzger",
+      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeihays4dmduizycwhsjan74m6xjzfaekfciqslfs5lhovvcstskyzu",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
       "tokenID": "1",
-      "artistLink": ""
-    },
-    {
-      "id": 16,
-      "artTitle": "HOODEMPIRE",
-      "artistName": "Draco",
-      "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeifqrmr3gkfclw6xy5k3p4s5ag7mfbkydppy737qbc6c3dlsakbd5e",
-      "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1",
-      "artistLink": "https://zora.co/0x359e3b5c9808e89e1a7f6337e47a54484bf92c27"
+      "artistLink": "https://twitter.com/NaomiMetzgerTJ"
     }
 ]
 
