@@ -1,7 +1,9 @@
 import React from 'react';
+import MintButton from './mintButton';
 import { 
     Image,
     Stack,
+    HStack,
     Heading,
     Text,
     Button,
@@ -28,27 +30,29 @@ interface ArtWallProps {
     tokenID,
     id,
  }) => {
-    return <Card className={id}>
+    return <Card variant="filled" borderRadius='0' p={['8', '16']} className={id}>
   
     <CardBody>
       <Image
         src={imageUrl}
-        alt={'An image of ${artistName} piece called ${artTitle}'}
+        alt={artTitle}
         borderRadius='0'
       />
       <Stack>
-        <Heading>{artTitle}</Heading>
-        <Heading>Artist: <a href=''>{artistName}</a></Heading>
-        <Text>{description}</Text>
+        <Heading size='lg'>{artTitle}</Heading>
+        <Heading size='md'>Artist: <a href=''>{artistName}</a></Heading>
+        <Text my={2}>{description}</Text>
       </Stack>
-      <Stack>
-        <Text>mint buttons here when ready</Text>
+      <Stack my={2}>
+        <MintButton />
       </Stack>
-      <Stack>
-        <Text>contract placeholder: {contractAddress}</Text>
-        <Text>token placeholder: {tokenID}</Text>
+      <HStack my={4}>
         <Button>FIND ON ZORA placeholder</Button>
         <Button>FIND ON EXPLORER placeholder</Button>
+      </HStack>
+      <Stack>
+        <Text>contract placeholder:<br />{contractAddress}</Text>
+        <Text>token placeholder:<br />{tokenID}</Text>
       </Stack>
     </CardBody>
   </Card>

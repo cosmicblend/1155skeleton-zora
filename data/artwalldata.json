@@ -7,6 +7,15 @@
       "description": "¸,ø¤º°°º¤ø,¸♥ At the intersection of technology and togetherness, you’ll find a burned CD. The Y2K substitute of a hand-written love letter. Painstakingly downloaded on dial-up internet. Lovingly curated into the perfect mix♥¸,ø¤º°°º¤ø,¸",
       "contractAddress": "0x0250FfD918AA6DeeA1bbBD7B89DbA06478E723be",
       "tokenID": "1"
-    }
+    },
+    {
+        "id": 2,
+        "artTitle": "testing things two",
+        "artistName": "tessy two testerson",
+        "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiahsuvq5dj524cf24tvbg5pby34nmt3cc5bj6moyd6agnis6ncema",
+        "description": "¸,ø¤º°°º¤ø,¸♥ At the intersection of technology and togetherness, you’ll find a burned CD. The Y2K substitute of a hand-written love letter. Painstakingly downloaded on dial-up internet. Lovingly curated into the perfect mix♥¸,ø¤º°°º¤ø,¸",
+        "contractAddress": "0x0250FfD918AA6DeeA1bbBD7B89DbA06478E723be",
+        "tokenID": "1"
+      }
   ]
   
