@@ -6,7 +6,7 @@ import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { zora } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { ChakraProvider } from '@chakra-ui/react';
-// import myTheme from '../theme';
+import tusTheme from '../theme';
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
@@ -30,7 +30,7 @@ const wagmiConfig = createConfig({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={tusTheme}>
       <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider modalSize="compact" chains={chains}>
           <Component {...pageProps} />

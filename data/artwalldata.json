@@ -6,7 +6,8 @@
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeicngpijgmh7w357waqiyxshtmptoawfrxaeopamzp46dvqbkxtsk4",
     "description": "¸,ø¤º°°º¤ø,¸♥ At the intersection of technology and togetherness, you’ll find a burned CD. The Y2K substitute of a hand-written love letter. Painstakingly downloaded on dial-up internet. Lovingly curated into the perfect mix♥¸,ø¤º°°º¤ø,¸",
     "contractAddress": "0x0250FfD918AA6DeeA1bbBD7B89DbA06478E723be",
-    "tokenID": "1"
+    "tokenID": "1",
+    "artistLink": "https://www.takeupspace.io/"
   },
   {
       "id": 2,
@@ -14,8 +15,9 @@
       "artistName": "Angel Darmella",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeigklr24a5gvxaugyosxdxlmsifp2k7dnftubpbcj5oaz7l37sfu5y",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1"
+      "contractAddress": "0x9E23E35B836B468047c54DF4dD415a7E31E0c08E",
+      "tokenID": "1",
+      "artistLink": "https://www.angeldarmella.com/aiphotography"
     },
     {
       "id": 3,
@@ -24,7 +26,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiehn42qligqhnjlvc42ge5ljcgstziswvixmqlvjey7asu2k6px6i",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": "https://ebukamordi.com/"
     },
     {
       "id": 4,
@@ -33,7 +36,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeihays4dmduizycwhsjan74m6xjzfaekfciqslfs5lhovvcstskyzu",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": "https://twitter.com/NaomiMetzgerTJ"
     },
     {
       "id": 5,
@@ -42,7 +46,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibbx6yhu2r6tnn5dev5aatl7fpj7muobxalcntmd3fulgogcen6ry",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": "https://twitter.com/moisesnotfound"
     },
     {
       "id": 6,
@@ -50,8 +55,9 @@
       "artistName": "arbstein",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeieak6275jddcdxv6mhqlw55wrypg4rscmsblr3pkbliwm6ezvt22q",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1"
+      "contractAddress": "0xb03D513B0a159296F7dcc5a99A9795C9CA7AdeD6",
+      "tokenID": "1",
+      "artistLink": "https://zora.co/arbstein.eth"
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeih7jqpk22pvcdpfr2edugs5ubbv42oy26oi57q65spxsxeqwmayhm",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": "https://twitter.com/Fatshionistaa"
     },
     {
       "id": 8,
@@ -68,8 +75,9 @@
       "artistName": "Laura Helen",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibvaun2msbnarjeztx63kpchr5ekkwlgax6lzv4mpjxl2vxha7kcy",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1"
+      "contractAddress": "0xFB6e057CBE4Cf535dc64d1F77d4a4718888248d5",
+      "tokenID": "1",
+      "artistLink": "https://zora.co/birdsoar.eth"
     },
     {
       "id": 9,
@@ -77,8 +85,9 @@
       "artistName": "Lill Terror",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibvrxmy3wt2r77xwooxh2jvyvcqd5fn4x6t7zhena3n52rqfqphiu",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1"
+      "contractAddress": "0x6076430E383A402B92A1eA7aB8c90495a6226fE4",
+      "tokenID": "1",
+      "artistLink": "https://zora.co/terrorzinart.eth"
     },
     {
       "id": 10,
@@ -87,7 +96,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeia3pwfpnif66zyqhpqckjagtsljy6v3p4homlatww4z7wosbsd5ee",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": "https://zora.co/qabqabqab.eth"
     },
     {
       "id": 11,
@@ -96,7 +106,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafkreic6c5ecwhya5z7wloz4tipdozagxlcx5swq665dhkuxdosplfsa4u",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": "https://zora.co/heartspaceave.eth"
     },
     {
       "id": 12,
@@ -105,7 +116,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeigkukk7m7bnzmjomr323wmdfjdwbw7hexfqi327auajooaf6gtlgu",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": ""
     },
     {
       "id": 13,
@@ -113,8 +125,9 @@
       "artistName": "Quetzal Gelo",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiczzy76pvgc2xocd47qvnv2mxrtg6f3dqy464t7rr42xyb5ld62ha",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
-      "contractAddress": "",
-      "tokenID": "1"
+      "contractAddress": "0x408b73f569E76a4D92d72526D5e64f17cC1cf4aC",
+      "tokenID": "1",
+      "artistLink": "https://zora.co/0xa51fc978850c373dd965ab7d1edf24692d0d0d61"
     },
     {
       "id": 14,
@@ -123,7 +136,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeifjye7r4lzjp5jcp7aa5b5d6uzbvvbsshagmiu46bgdc5gt5vzary",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": "https://zora.co/iamloribaldwin.eth"
     },
     {
       "id": 15,
@@ -132,7 +146,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeid3ywe6scds7cvrrxfemqedekse7inzdrbt7tkr5m7imrkk3yw4xa",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": ""
     },
     {
       "id": 16,
@@ -141,7 +156,8 @@
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeifqrmr3gkfclw6xy5k3p4s5ag7mfbkydppy737qbc6c3dlsakbd5e",
       "description": "What would a platform look like if it wasn’t optimising for attention, and instead encouraged people to explore, stay a while, linger",
       "contractAddress": "",
-      "tokenID": "1"
+      "tokenID": "1",
+      "artistLink": "https://zora.co/0x359e3b5c9808e89e1a7f6337e47a54484bf92c27"
     }
 ]
 

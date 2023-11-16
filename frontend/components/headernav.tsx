@@ -14,7 +14,7 @@ const HeaderNav = () => {
          as="header"
          position="sticky"
          top="0"
-         zIndex="sticky"
+         zIndex="docked"
          bg="white"
          shadow="md"
          width="full"

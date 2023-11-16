@@ -9,6 +9,7 @@ import {
     Button,
     Card,
     CardBody, 
+    Link
   } from '@chakra-ui/react';
 
 interface ArtWallProps {
@@ -19,6 +20,7 @@ interface ArtWallProps {
     contractAddress: string;
     tokenID: string;  
     id: string;
+    artistLink: string;
 }
 
   const ArtWall: React.FC<ArtWallProps> = ({ 
@@ -29,30 +31,29 @@ interface ArtWallProps {
     contractAddress,
     tokenID,
     id,
+    artistLink
  }) => {
-    return <Card variant="filled" borderRadius='0' p={['8', '16']} className={id}>
+    return <Card variant="filled" borderRadius='0' p={['4', '8']} bg='#fff' className={id}>
   
     <CardBody>
       <Image
         src={imageUrl}
         alt={artTitle}
         borderRadius='0'
+        mb={4}
       />
       <Stack>
-        <Heading size='lg'>{artTitle}</Heading>
-        <Heading size='md'>Artist: <a href=''>{artistName}</a></Heading>
+        <Heading as='h3' fontSize='h5' fontWeight='aecBlack'>{artTitle}</Heading>
+        <Heading as='h4' fontSize='h6'>By: <Link href={artistLink} isExternal>{artistName}</Link></Heading>
         <Text my={2}>{description}</Text>
       </Stack>
       <Stack my={2}>
         <Text>mint button here</Text>
       </Stack>
-      <HStack my={4}>
-        <Button>FIND ON ZORA placeholder</Button>
-        <Button>FIND ON EXPLORER placeholder</Button>
-      </HStack>
-      <Stack>
-        <Text>contract placeholder:<br />{contractAddress}</Text>
-        <Text>token placeholder:<br />{tokenID}</Text>
+      <Stack my={4}>
+        <Button>ON ZORA</Button>
+        <Button>ON EXPLORER</Button>
+        <Text>{contractAddress}</Text>
       </Stack>
     </CardBody>
   </Card>
