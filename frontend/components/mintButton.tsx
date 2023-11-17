@@ -79,7 +79,7 @@ function MintButton() {
     }
 
     if (walletClient?.data) {
-      await mintNFT(walletClient.data, address, tokenId, /*mintQuantity*/);
+      await mintNFT(walletClient.data, address, tokenId, mintQuantity);
     } else {
       alert('Wallet client data is not available. Please try again.');    
     }
