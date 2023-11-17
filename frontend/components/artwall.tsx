@@ -1,5 +1,5 @@
 import React from 'react';
-// import MintButton from './mintButton';
+import MintButton from './mintButton';
 import { 
     Image,
     Stack,
@@ -49,6 +49,7 @@ interface ArtWallProps {
       </Stack>
       <Stack my={2}>
         <Text>mint button here</Text>
+        <MintButton />
       </Stack>
       <Stack my={4}>
         <Button>ON ZORA</Button>
