@@ -52,12 +52,18 @@ function MintButton() {
 
   const handleMint = async () => {
     if (!isConnected) {
-      openConnectModal();
+      if (openConnectModal) {
+        openConnectModal();
+      } else {
+        console.error('Unable to open connect modal');
+      }
       return;
     }
 
     if (walletClient?.data) {
       await mintNFT(walletClient.data, address, tokenId);
+    } else {
+      alert('Wallet client data is not available. Please try again.');    
     }
   };
 
