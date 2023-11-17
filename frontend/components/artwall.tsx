@@ -36,7 +36,7 @@ interface ArtWallProps {
     zoraLink,
     explorerLink
  }) => {
-    return <Card variant="filled" borderRadius='0' p={['4', '8']} bg='#fff' className={id}>
+    return <Card variant="filled" borderRadius='0' p={['2', '8']} bg='#fff' className={id}>
   
     <CardBody>
       <Image
@@ -56,7 +56,7 @@ interface ArtWallProps {
       <Stack my={4} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
         <Link href={zoraLink} isExternal>
           <Button 
-            w="160px"
+            w="120px"
             borderRadius="0"
             backgroundColor="#fff" 
             borderColor="#EBF3E6"
@@ -66,7 +66,7 @@ interface ArtWallProps {
         </Link>
         <Link href={explorerLink} isExternal>
           <Button 
-            w="160px"
+            w="120px"
             borderRadius="0"
             backgroundColor="#fff"
             borderColor="#EBF3E6"

@@ -41,7 +41,7 @@ const Home: NextPage = () => {
 
       <HeaderNav />
 
-      <Box as="main" p={8}>
+      <Box as="main" p={['2', '4']}>
       <Flex align='center' justify='center'>
           <Image
             src={theManifestoUrl}
