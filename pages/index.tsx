@@ -51,7 +51,7 @@ const Home: NextPage = () => {
             textAlign="center"
           /> 
         </Flex>
-        <Heading>manifesto stuff here</Heading>
+        <Heading>manifesto here</Heading>
         <Flex align='center' justify='center'>
           <Image
             src={theArtistsUrl}
