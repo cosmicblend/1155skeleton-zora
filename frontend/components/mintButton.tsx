@@ -4,8 +4,7 @@ import { createMintClient } from "@zoralabs/protocol-sdk";
 import type { Address, WalletClient } from "viem";
 import { createPublicClient, createWalletClient, http } from "viem";
 import { zora } from "viem/chains";
-import { useWalletClient, useAccount } from "wagmi";
-import { useConnectModal } from '@rainbow-me/rainbowkit';
+import { useWalletClient } from "wagmi";
 
 async function mintNFT(
   walletClient: WalletClient,
@@ -43,33 +42,21 @@ async function mintNFT(
 }
 
 function MintButton() {
-  const { isConnected } = useAccount();
   const address = "0x0250FfD918AA6DeeA1bbBD7B89DbA06478E723be";
   const tokenId = BigInt(1);
   const walletClient = useWalletClient();
-  const mintText = isConnected ? 'Mint Now' : 'Connect Your Wallet';
-  const { openConnectModal } = useConnectModal();
 
-  const handleMint = async () => {
-    if (!isConnected) {
-      if (openConnectModal) {
-        openConnectModal();
-      } else {
-        console.error('Unable to open connect modal');
-      }
+  const handleMint = () => {
+    if (!walletClient?.data) {
       return;
     }
 
-    if (walletClient?.data) {
-      await mintNFT(walletClient.data, address, tokenId);
-    } else {
-      alert('Wallet client data is not available. Please try again.');    
-    }
+    mintNFT(walletClient.data, address, tokenId);
   };
 
   return (
     <Button colorScheme="blue" onClick={handleMint}>
-      {mintText}
+      Mint NFT
     </Button>
   );
 }
