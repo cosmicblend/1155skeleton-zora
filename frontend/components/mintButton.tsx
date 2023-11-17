@@ -20,10 +20,13 @@ async function mintNFT(
     chain: walletClient.chain,
     transport: http(),
   });
-  const mintable = await mintAPI.getMintable({
-    tokenContract: address,
-    tokenId,
-  });
+  const mintableParams = new URLSearchParams({
+    tokenId: `${tokenId}`,
+    collectionAddress: address,
+    chainName: mintAPI.network.zoraBackendChainName,
+  }).toString();
+  const result = await fetch(`/api/mintable?${mintableParams}`)
+  const mintable = await result.json();
   const params = await mintAPI.makePrepareMintTokenParams({
     mintable,
     publicClient,
