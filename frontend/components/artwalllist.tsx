@@ -3,7 +3,7 @@ import React from 'react';
 import ArtWall from './artwall';
 import artWallData from '../../data/artwalldata.json'; 
 import { 
-    SimpleGrid,
+    SimpleGrid
 } from '@chakra-ui/react';
 
 const ArtWallList = () => {
@@ -22,6 +22,8 @@ const ArtWallList = () => {
           tokenID={artItem.tokenID}
           id={artItem.id.toString()}
           artistLink={artItem.artistLink}
+          zoraLink={artItem.zoraLink}
+          explorerLink={artItem.explorerLink}
         />
       ))}
     </SimpleGrid>
