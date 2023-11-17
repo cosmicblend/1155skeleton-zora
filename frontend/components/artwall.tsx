@@ -3,7 +3,6 @@ import MintButton from './mintButton';
 import { 
     Image,
     Stack,
-    HStack,
     Heading,
     Text,
     Button,
@@ -21,6 +20,8 @@ interface ArtWallProps {
     tokenID: string;  
     id: string;
     artistLink: string;
+    zoraLink: string;
+    explorerLink: string;
 }
 
   const ArtWall: React.FC<ArtWallProps> = ({ 
@@ -31,9 +32,11 @@ interface ArtWallProps {
     contractAddress,
     tokenID,
     id,
-    artistLink
+    artistLink,
+    zoraLink,
+    explorerLink
  }) => {
-    return <Card variant="filled" borderRadius='0' p={['4', '8']} bg='#fff' className={id}>
+    return <Card variant="filled" borderRadius='0' p={['2', '8']} bg='#fff' className={id}>
   
     <CardBody>
       <Image
@@ -44,18 +47,35 @@ interface ArtWallProps {
       />
       <Stack>
         <Heading as='h3' fontSize='h5' fontWeight='aecBlack'>{artTitle}</Heading>
-        <Heading as='h4' fontSize='h6'>By: <Link href={artistLink} isExternal>{artistName}</Link></Heading>
+        <Heading as='h4' fontSize='h6'>By: <Link href={artistLink} isExternal color='#DF257E' textDecoration='underline'>{artistName}</Link></Heading>
         <Text my={2}>{description}</Text>
       </Stack>
       <Stack my={2}>
-        <Text>mint button here</Text>
         <MintButton />
       </Stack>
-      <Stack my={4}>
-        <Button>ON ZORA</Button>
-        <Button>ON EXPLORER</Button>
-        <Text>{contractAddress}</Text>
+      <Stack my={4} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
+        <Link href={zoraLink} isExternal>
+          <Button 
+            w="120px"
+            borderRadius="0"
+            backgroundColor="#fff" 
+            borderColor="#EBF3E6"
+            borderWidth="3px"
+            _hover={{bg:'#EBF3E6'}}
+          >ON ZORA</Button>
+        </Link>
+        <Link href={explorerLink} isExternal>
+          <Button 
+            w="120px"
+            borderRadius="0"
+            backgroundColor="#fff"
+            borderColor="#EBF3E6"
+            borderWidth="3px" 
+            _hover={{bg:'#EBF3E6'}}
+          >ON EXPLORER</Button>
+        </Link>
       </Stack>
+      <Text>{contractAddress}</Text>
     </CardBody>
   </Card>
 
