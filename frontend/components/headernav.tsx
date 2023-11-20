@@ -13,15 +13,25 @@ const HeaderNav = () => {
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [lastTime, setLastTime] = useState(Date.now());
 
+    const easeRotation = (velocity: number) => {
+        const maxRotation = 720; // Max rotation in degrees
+        let rotation = velocity * 180; // Scale velocity to a usable value
+        if (rotation > maxRotation) rotation = maxRotation; // Limit the rotation
+        return rotation;
+    };
+
     const handleScroll = () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const now = Date.now();
         const velocity = Math.abs(scrollTop - lastScrollTop) / (now - lastTime);
-
-        setScrollVelocity(velocity);
+    
+        const easedRotation = easeRotation(velocity); 
+    
+        setScrollVelocity(easedRotation); 
         setLastScrollTop(scrollTop);
         setLastTime(now);
     };
+    
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -57,7 +67,7 @@ const HeaderNav = () => {
                         alt=''
                         borderRadius='0'
                         textAlign="center"
-                        style={{ transform: `rotate(${scrollVelocity * 1080}deg)` }}
+                        style={{ transform: `rotate(${scrollVelocity}deg)` }}
                     />
                     <Image
                         src={totUrl}
@@ -71,7 +81,7 @@ const HeaderNav = () => {
             </Box><Box>
             </Box>
             <Box flex="1" display="flex" justifyContent="flex-end">
-                <ConnectButton />
+                <ConnectButton label="connect"/>
             </Box>
         </Flex>
     );

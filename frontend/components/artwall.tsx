@@ -53,10 +53,10 @@ interface ArtWallProps {
       <Stack my={2}>
         <MintButton />
       </Stack>
-      <Stack my={4} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
+      <Stack mt={8} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
         <Link href={zoraLink} isExternal>
           <Button 
-            w="120px"
+            w="100%"
             borderRadius="0"
             backgroundColor="#fff" 
             borderColor="#EBF3E6"
@@ -66,7 +66,7 @@ interface ArtWallProps {
         </Link>
         <Link href={explorerLink} isExternal>
           <Button 
-            w="120px"
+            w="100%"
             borderRadius="0"
             backgroundColor="#fff"
             borderColor="#EBF3E6"

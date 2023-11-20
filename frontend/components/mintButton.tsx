@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
-import { Button, useToast } from "@chakra-ui/react";
+import { 
+  Button, 
+  useToast,
+  Box,
+  Stack
+} from "@chakra-ui/react";
 import { createMintClient } from "@zoralabs/protocol-sdk";
 import type { Address, WalletClient } from "viem";
 import { createPublicClient, createWalletClient, http } from "viem";
-import { zora } from "viem/chains";
+//import { zora } from "viem/chains";
 import { useWalletClient } from "wagmi";
 import { useConnectModal } from '@rainbow-me/rainbowkit';
 
 async function mintNFT(
   walletClient: WalletClient,
   address: Address,
-  tokenId: bigint
+  tokenId: bigint,
+  quantityToMint: number
 ) {
   if (!walletClient.chain) {
     throw new Error("Chain is undefined");
@@ -34,7 +40,7 @@ async function mintNFT(
     minterAccount: walletClient.account!.address,
     mintArguments: {
       mintToAddress: walletClient.account!.address,
-      quantityToMint: 1,
+      quantityToMint: quantityToMint,
       mintComment: "Hello",
     },
   });
@@ -54,11 +60,23 @@ function MintButton() {
   const [isMinting, setIsMinting] = useState(false);
   const toast = useToast();
 
+  // quantity things
+  const [quantityToMint, setQuantityToMint] = useState(1);
+  const mintCostPerNFT = 0.000777;
+
+  const incrementQuantity = () => {
+    setQuantityToMint(q => q + 1);
+  };
+
+  const decrementQuantity = () => {
+    setQuantityToMint(q => Math.max(1, q - 1));
+  };
+
   const handleMint = async () => {
     if (walletClient?.data) {
       setIsMinting(true); // Start minting
       try {
-        await mintNFT(walletClient.data, address, tokenId);
+        await mintNFT(walletClient.data, address, tokenId, quantityToMint);
         toast({
           title: "Success",
           description: "NFT minted successfully!",
@@ -106,10 +124,61 @@ function MintButton() {
   };  
 
   return (
-    <Button colorScheme="blue" onClick={handleMint}>
-      {isWalletConnected ? (isMinting ? "Minting..." : "Mint") : "Connect Your Wallet"}
-    </Button>
+    <div>
+      {isWalletConnected && (
+        <>
+        <Stack mt={4} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
+          <Button 
+            w="10%" 
+            onClick={decrementQuantity}
+            borderRadius="0"
+            backgroundColor="#fff"
+            borderColor="#EBF3E6"
+            borderWidth="3px" 
+            fontSize="h5"
+            pb={2}
+            _hover={{bg:'#EBF3E6'}}
+          >-</Button>
+          <Box w="10%" textAlign='center'>{quantityToMint}</Box>
+          <Button 
+            w="10%" 
+            onClick={incrementQuantity}
+            borderRadius="0"
+            backgroundColor="#fff"
+            borderColor="#EBF3E6"
+            borderWidth="3px" 
+            fontSize="h5"
+            pb={2}
+            _hover={{bg:'#EBF3E6'}}
+          >+</Button>
+          <Button 
+          onClick={handleMint} 
+          disabled={isMinting}
+          borderRadius="0"
+          backgroundColor="#DF257E"
+          borderColor="#DF257E"
+          borderWidth="3px" 
+          color="#fff"
+          fontSize="h5"
+          _hover={{bg:'#DF257E'}}
+          w="70%"
+          pb={1}
+          >
+            {isWalletConnected ? (isMinting ? "minting..." : "MINT") : "CONNECT WALLET"}
+            <Box fontSize="md" ml={1}>{quantityToMint * mintCostPerNFT} eth</Box>
+          </Button>
+        </Stack>
+        </>
+      )}
+    </div>
   );
 }
+
+//  return (
+//    <Button colorScheme="blue" onClick={handleMint}>
+//      {isWalletConnected ? (isMinting ? "Minting..." : "Mint") : "Connect Your Wallet"}
+//    </Button>
+//  );
+//}
 
 export default MintButton;
