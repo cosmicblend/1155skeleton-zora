@@ -66,7 +66,7 @@ const Home: NextPage = () => {
 
       <footer>
         <a href="" rel="noopener noreferrer" target="_blank">
-          made by people
+        Take Up Space is a media company and collective for culture-makers. We empower creatives through media & community experiences - spanning IRL, online & onchain.
         </a>
       </footer>
     </Box>

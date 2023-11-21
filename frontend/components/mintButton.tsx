@@ -16,7 +16,8 @@ async function mintNFT(
   walletClient: WalletClient,
   address: Address,
   tokenId: bigint,
-  quantityToMint: number
+  quantityToMint: number,
+  mintReferralAddress: string
 ) {
   if (!walletClient.chain) {
     throw new Error("Chain is undefined");
@@ -41,7 +42,8 @@ async function mintNFT(
     mintArguments: {
       mintToAddress: walletClient.account!.address,
       quantityToMint: quantityToMint,
-      mintComment: "Hello",
+      mintComment: "",
+      mintReferral: mintReferralAddress,
     },
   });
   const simulatedMinted = await publicClient.simulateContract(
@@ -72,11 +74,13 @@ function MintButton() {
     setQuantityToMint(q => Math.max(1, q - 1));
   };
 
+  const mintReferralAddress = "0xD1344833F3cCB6359583657BE3D8959a18AB83b2";
+
   const handleMint = async () => {
     if (walletClient?.data) {
       setIsMinting(true); // Start minting
       try {
-        await mintNFT(walletClient.data, address, tokenId, quantityToMint);
+        await mintNFT(walletClient.data, address, tokenId, quantityToMint, mintReferralAddress);
         toast({
           title: "Success",
           description: "NFT minted successfully!",

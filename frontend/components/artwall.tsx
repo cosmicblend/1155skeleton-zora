@@ -75,7 +75,6 @@ interface ArtWallProps {
           >ON EXPLORER</Button>
         </Link>
       </Stack>
-      <Text>{contractAddress}</Text>
     </CardBody>
   </Card>
 
