@@ -1,6 +1,18 @@
 [
   {
     "id": 1,
+    "artTitle": "Take Up Space Manifesto",
+    "artistName": "Take Up Space",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibqonq2zt4sqscbnvtuw7w6qe3i523dix2w2mxpwi2dzxftrlf5au",
+    "description": "we are culture.",
+    "contractAddress": "0x20EBD712125F56749202da2a11782450A6CC0864",
+    "tokenID": "2",
+    "artistLink": "https://www.takeupspace.io/",
+    "zoraLink": "https://zora.co/collect/zora:0x20ebd712125f56749202da2a11782450a6cc0864/2",
+    "explorerLink": "https://explorer.zora.energy/address/0x20ebd712125f56749202da2a11782450a6cc0864"
+  },
+  {
+    "id": 2,
     "artTitle": "BURN 4 U",
     "artistName": "Take Up Space",
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeicngpijgmh7w357waqiyxshtmptoawfrxaeopamzp46dvqbkxtsk4",
@@ -12,7 +24,19 @@
     "explorerLink": "https://explorer.zora.energy/address/0x20EBD712125F56749202da2a11782450A6CC0864"
   },
   {
-    "id": 2,
+    "id": 3,
+    "artTitle": "Latent Lovers",
+    "artistName": "Moises Sanabria",
+    "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeihr433p5xqxd2ylnpfr5sn5r6vkfnt627v6r6xjxdbeugzi7pixoy",
+    "description": "'Latent Lovers' draws a connection between the possibility space in machine learning's latent realm and the odds of discovering one's soulmate.",
+    "contractAddress": "0xf7A3913B27368554011A0896ccD5A86F565901D9",
+    "tokenID": "1",
+    "artistLink": "https://twitter.com/moisesdsanabria",
+    "zoraLink": "https://zora.co/collect/zora:0xf7a3913b27368554011a0896ccd5a86f565901d9/1",
+    "explorerLink": "https://explorer.zora.energy/address/0xf7a3913b27368554011a0896ccd5a86f565901d9"
+  },
+  {
+    "id": 4,
     "artTitle": "Earthly Bodies",
     "artistName": "Alexandra Obochi",
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeih7jqpk22pvcdpfr2edugs5ubbv42oy26oi57q65spxsxeqwmayhm",
@@ -24,7 +48,7 @@
     "explorerLink": "https://explorer.zora.energy/address/0x1f2fb822a7a657103bb5666962b6903b8471df2d"
   },
   {
-    "id": 3,
+    "id": 5,
     "artTitle": "CELESTIAL TECH | SUN LESSON",
     "artistName": "Laura Helen",
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibvaun2msbnarjeztx63kpchr5ekkwlgax6lzv4mpjxl2vxha7kcy",
@@ -36,7 +60,7 @@
     "explorerLink": "https://explorer.zora.energy/address/0xfb6e057cbe4cf535dc64d1f77d4a4718888248d5"
   },
   {
-    "id": 4,
+    "id": 6,
     "artTitle": "Web3nnections",
     "artistName": "qabqabqab",
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeia3pwfpnif66zyqhpqckjagtsljy6v3p4homlatww4z7wosbsd5ee",
@@ -48,7 +72,7 @@
     "explorerLink": "https://explorer.zora.energy/address/0x1fda7c28c5cc0796ce93c4958864412c26e5b4fc"
   },
   {
-    "id": 5,
+    "id": 7,
     "artTitle": "Bridges Across Bytes",
     "artistName": "Ebuka Mordi",
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiehn42qligqhnjlvc42ge5ljcgstziswvixmqlvjey7asu2k6px6i",
@@ -60,7 +84,7 @@
     "explorerLink": "https://explorer.zora.energy/address/0xe3c3d93d6beb4eb56346d1263bd6f7b7340a0084"
   },
   {
-    "id": 6,
+    "id": 8,
     "artTitle": "A Dream Fantasy Core",
     "artistName": "arbstein",
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeieak6275jddcdxv6mhqlw55wrypg4rscmsblr3pkbliwm6ezvt22q",
@@ -72,7 +96,7 @@
     "explorerLink": "https://explorer.zora.energy/address/0xb03d513b0a159296f7dcc5a99a9795c9ca7aded6"
   },
   {
-    "id": 7,
+    "id": 9,
     "artTitle": "Conjoined Love",
     "artistName": "Mihr",
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeid535mxvwrzgasdi2bbqgeaacypa3e2hcjhj75ze2so4ajz2b2iaq",
@@ -84,7 +108,7 @@
     "explorerLink": "https://explorer.zora.energy/address/0x3669be535b84157b743da7c931eb9589cb5b8ebd"
   },
   {
-    "id": 8,
+    "id": 10,
     "artTitle": "UR FAV CHEAT CODE",
     "artistName": "Quetzal Gelo",
     "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeiczzy76pvgc2xocd47qvnv2mxrtg6f3dqy464t7rr42xyb5ld62ha",
@@ -96,7 +120,7 @@
     "explorerLink": "https://explorer.zora.energy/address/0x408b73f569e76a4d92d72526d5e64f17cc1cf4ac"
   },
   {
-      "id": 9,
+      "id": 11,
       "artTitle": "HEALWARE",
       "artistName": "Angel Darmella",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeigklr24a5gvxaugyosxdxlmsifp2k7dnftubpbcj5oaz7l37sfu5y",
@@ -108,7 +132,7 @@
       "explorerLink": "https://explorer.zora.energy/address/0x9e23e35b836b468047c54df4dd415a7e31e0c08e"
     },
     {
-      "id": 10,
+      "id": 12,
       "artTitle": "HOODEMPIRE",
       "artistName": "Draco",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeifqrmr3gkfclw6xy5k3p4s5ag7mfbkydppy737qbc6c3dlsakbd5e",
@@ -120,7 +144,7 @@
       "explorerLink": "https://explorer.zora.energy/address/0x1e0035ae7fdbcda236d4c5a49d9fc22473422c29"
     },
     {
-      "id": 11,
+      "id": 13,
       "artTitle": "Jazzing all the back to the future in color",
       "artistName": "Taylor Watson",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafkreic6c5ecwhya5z7wloz4tipdozagxlcx5swq665dhkuxdosplfsa4u",
@@ -132,7 +156,7 @@
       "explorerLink": "https://explorer.zora.energy/address/0x8dd4c6f2206568ae4e93d28ac8f7ec936b9e10e2"
     },
     {
-      "id": 12,
+      "id": 14,
       "artTitle": "Do you understand?",
       "artistName": "Lill Terror",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeibvrxmy3wt2r77xwooxh2jvyvcqd5fn4x6t7zhena3n52rqfqphiu",
@@ -144,7 +168,7 @@
       "explorerLink": "https://explorer.zora.energy/address/0x6076430e383a402b92a1ea7ab8c90495a6226fe4"
     },
     {
-      "id": 13,
+      "id": 15,
       "artTitle": "NEKRA: Iteration Artifact 0.3 ",
       "artistName": "Lori Baldwin",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeifjye7r4lzjp5jcp7aa5b5d6uzbvvbsshagmiu46bgdc5gt5vzary",
@@ -156,7 +180,7 @@
       "explorerLink": "https://explorer.zora.energy/address/0x343fb4e44a8ee060dd5e53036352e1f884608ece"
     },
     {
-      "id": 14,
+      "id": 16,
       "artTitle": "tech is my friend",
       "artistName": "Naomi Metzger",
       "imageUrl": "https://ipfs.decentralized-content.com/ipfs/bafybeihays4dmduizycwhsjan74m6xjzfaekfciqslfs5lhovvcstskyzu",

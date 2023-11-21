@@ -146,12 +146,12 @@ function MintButton({ contractAddress }: MintButtonProps) {
           <Button 
             onClick={openConnectModal}
             borderRadius="0"
-            backgroundColor="#DF257E"
+            backgroundColor="#fff"
             borderColor="#DF257E"
             borderWidth="3px" 
-            color="#fff"
+            color="#DF257E"
             fontSize="h5"
-            _hover={{bg:'#DF257E'}}
+            _hover={{bg:'#fff'}}
             //w="70%"
             pb={1}
           >
@@ -190,17 +190,17 @@ function MintButton({ contractAddress }: MintButtonProps) {
           onClick={handleMint} 
           disabled={isMinting}
           borderRadius="0"
-          backgroundColor="#DF257E"
+          backgroundColor="#fff"
           borderColor="#DF257E"
           borderWidth="3px" 
-          color="#fff"
+          color="#DF257E"
           fontSize="h5"
-          _hover={{bg:'#DF257E'}}
+          _hover={{bg:'#fff'}}
           w="70%"
           pb={1}
           >
             {isWalletConnected ? (isMinting ? "MINTING..." : "MINT") : "CONNECT WALLET"}
-            <Box fontSize="md" ml={1}>{quantityToMint * mintCostPerNFT} eth</Box>
+            <Box fontSize="md" ml={1} mt={1}>{quantityToMint * mintCostPerNFT} eth</Box>
           </Button>
         </Stack>
         </>
