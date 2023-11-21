@@ -53,6 +53,14 @@ async function mintNFT(
   return await publicClient.waitForTransactionReceipt({ hash });
 }
 
+function ensureAddressFormat(address) {
+  if (!address.startsWith('0x')) {
+    return `0x${address}`;
+  }
+  return address;
+}
+
+
 function MintButton() {
   const address = "0x0250FfD918AA6DeeA1bbBD7B89DbA06478E723be";
   const tokenId = BigInt(1);
@@ -80,6 +88,7 @@ function MintButton() {
     if (walletClient?.data) {
       setIsMinting(true); // Start minting
       try {
+        const formattedMintReferralAddress = ensureAddressFormat(mintReferralAddress);
         await mintNFT(walletClient.data, address, tokenId, quantityToMint, mintReferralAddress);
         toast({
           title: "Success",
