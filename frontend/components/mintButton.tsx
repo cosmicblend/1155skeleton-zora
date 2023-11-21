@@ -136,7 +136,26 @@ function MintButton() {
   };  
 
   return (
-    <div>
+    <Box>
+      {!isWalletConnected && (
+        <Stack mt={4} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
+          <Button 
+            onClick={openConnectModal}
+            borderRadius="0"
+            backgroundColor="#DF257E"
+            borderColor="#DF257E"
+            borderWidth="3px" 
+            color="#fff"
+            fontSize="h5"
+            _hover={{bg:'#DF257E'}}
+            //w="70%"
+            pb={1}
+          >
+            CONNECT YOUR WALLET
+          </Button>
+        </Stack>
+      )}
+
       {isWalletConnected && (
         <>
         <Stack mt={4} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
@@ -176,21 +195,14 @@ function MintButton() {
           w="70%"
           pb={1}
           >
-            {isWalletConnected ? (isMinting ? "minting..." : "MINT") : "CONNECT WALLET"}
+            {isWalletConnected ? (isMinting ? "MINTING..." : "MINT") : "CONNECT WALLET"}
             <Box fontSize="md" ml={1}>{quantityToMint * mintCostPerNFT} eth</Box>
           </Button>
         </Stack>
         </>
       )}
-    </div>
+    </Box>
   );
 }
-
-//  return (
-//    <Button colorScheme="blue" onClick={handleMint}>
-//      {isWalletConnected ? (isMinting ? "Minting..." : "Mint") : "Connect Your Wallet"}
-//    </Button>
-//  );
-//}
 
 export default MintButton;
