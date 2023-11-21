@@ -87,7 +87,7 @@ function MintButton({ contractAddress, tokenId }: MintButtonProps) {
     setQuantityToMint(q => Math.max(1, q - 1));
   };
 
-  const mintReferralAddress = "0xD1344833F3cCB6359583657BE3D8959a18AB83b2";
+  const mintReferralAddress = "0x4B921B8AFDc9cCFc7297Bbe6c3a7eACe7dA93D92";
 
   const handleMint = async () => {
     if (walletClient?.data) {
