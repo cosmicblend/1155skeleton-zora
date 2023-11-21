@@ -22,7 +22,7 @@ function ensureAddressFormat(address: string) {
 async function mintNFT(
   walletClient: WalletClient,
   address: Address,
-  tokenId: bigint,
+  tokenID: bigint,
   quantityToMint: number,
   mintReferralAddress: string
 ) {
@@ -36,7 +36,7 @@ async function mintNFT(
     transport: http(),
   });
   const mintableParams = new URLSearchParams({
-    tokenId: `${tokenId}`,
+    tokenId: `${tokenID}`,
     collectionAddress: address,
     chainName: mintAPI.network.zoraBackendChainName,
   }).toString();
@@ -61,12 +61,14 @@ async function mintNFT(
 }
 interface MintButtonProps {
   contractAddress: string;
+  tokenId: string;
 }
 
-function MintButton({ contractAddress }: MintButtonProps) {
+function MintButton({ contractAddress, tokenId }: MintButtonProps) {
   //const address = contractAddress;
   const address: Address = contractAddress as Address;
-  const tokenId = BigInt(1);
+  //const tokenId = BigInt(1);
+  const tokenBigInt = BigInt(tokenId);
   const walletClient = useWalletClient();
   const { openConnectModal } = useConnectModal();
   const isWalletConnected = walletClient?.data !== undefined;
@@ -92,7 +94,7 @@ function MintButton({ contractAddress }: MintButtonProps) {
       setIsMinting(true); // Start minting
       try {
         const formattedMintReferralAddress = ensureAddressFormat(mintReferralAddress) as `0x${string}`;
-        await mintNFT(walletClient.data, address, tokenId, quantityToMint, formattedMintReferralAddress);
+        await mintNFT(walletClient.data, address, tokenBigInt, quantityToMint, formattedMintReferralAddress);
         toast({
           title: "Success",
           description: "NFT minted successfully!",

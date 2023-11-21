@@ -51,7 +51,7 @@ interface ArtWallProps {
         <Text my={2}>{description}</Text>
       </Stack>
       <Stack my={2}>
-        <MintButton contractAddress={contractAddress} />
+        <MintButton contractAddress={contractAddress} tokenId={tokenID} />
       </Stack>
       <Stack mt={8} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
         <Link href={zoraLink} isExternal>
