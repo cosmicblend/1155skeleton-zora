@@ -12,6 +12,13 @@ import { createPublicClient, createWalletClient, http } from "viem";
 import { useWalletClient } from "wagmi";
 import { useConnectModal } from '@rainbow-me/rainbowkit';
 
+function ensureAddressFormat(address: string) {
+  if (!address.startsWith('0x')) {
+    return `0x${address}`;
+  }
+  return address;
+}
+
 async function mintNFT(
   walletClient: WalletClient,
   address: Address,
@@ -43,7 +50,7 @@ async function mintNFT(
       mintToAddress: walletClient.account!.address,
       quantityToMint: quantityToMint,
       mintComment: "",
-      mintReferral: mintReferralAddress,
+      mintReferral: mintReferralAddress as `0x${string}`,
     },
   });
   const simulatedMinted = await publicClient.simulateContract(
@@ -52,14 +59,6 @@ async function mintNFT(
   const hash = await walletClient.writeContract(simulatedMinted.request);
   return await publicClient.waitForTransactionReceipt({ hash });
 }
-
-function ensureAddressFormat(address) {
-  if (!address.startsWith('0x')) {
-    return `0x${address}`;
-  }
-  return address;
-}
-
 
 function MintButton() {
   const address = "0x0250FfD918AA6DeeA1bbBD7B89DbA06478E723be";
@@ -88,8 +87,8 @@ function MintButton() {
     if (walletClient?.data) {
       setIsMinting(true); // Start minting
       try {
-        const formattedMintReferralAddress = ensureAddressFormat(mintReferralAddress);
-        await mintNFT(walletClient.data, address, tokenId, quantityToMint, mintReferralAddress);
+        const formattedMintReferralAddress = ensureAddressFormat(mintReferralAddress) as `0x${string}`;
+        await mintNFT(walletClient.data, address, tokenId, quantityToMint, formattedMintReferralAddress);
         toast({
           title: "Success",
           description: "NFT minted successfully!",
