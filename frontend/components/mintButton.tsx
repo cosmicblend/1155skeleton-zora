@@ -59,9 +59,13 @@ async function mintNFT(
   const hash = await walletClient.writeContract(simulatedMinted.request);
   return await publicClient.waitForTransactionReceipt({ hash });
 }
+interface MintButtonProps {
+  contractAddress: string;
+}
 
-function MintButton() {
-  const address = "0x0250FfD918AA6DeeA1bbBD7B89DbA06478E723be";
+function MintButton({ contractAddress }: MintButtonProps) {
+  //const address = contractAddress;
+  const address: Address = contractAddress as Address;
   const tokenId = BigInt(1);
   const walletClient = useWalletClient();
   const { openConnectModal } = useConnectModal();
