@@ -73,7 +73,7 @@ const Home: NextPage = () => {
         align='center' 
         justify='center' 
         textAlign='center' 
-        mx='19%'
+        mx={['2rem', '19%', null]}
         py='3rem'
         fontFamily='acumin-pro-extra-condensed, sans-serif'
         fontSize={['h6', 'h5', null]}
