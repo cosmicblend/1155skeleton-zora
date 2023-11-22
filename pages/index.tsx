@@ -6,7 +6,8 @@ import {
   Heading,
   Flex,
   Box,
-  Image
+  Image,
+  Text
 } from '@chakra-ui/react';
 // import { useAccount } from 'wagmi';
 // import React, { useState, useEffect } from 'react';
@@ -15,6 +16,8 @@ import {
 const Home: NextPage = () => {
   const theArtistsUrl = '/images/cursivish-theArtists.png';
   const theManifestoUrl = '/images/cursiveish-theManifesto.png';
+  const brandUrl = '/images/cursivish-tot.png';
+  const logo2Url = '/images/tus_logo.png';
   return (
     <Box
       w="100%"
@@ -23,8 +26,8 @@ const Home: NextPage = () => {
         bgGradient: 'radial(ellipse at center, #FFB07F 0%, #DF257E 32%, #F5F5F5 68%, #DFF3F4 84%, #F4F4DE 100%, #FFB07F 68%)',
         backgroundSize: '200% 200%',
         animation: { 
-          base: 'cdRotate 32s cubic-bezier(0.32, 0.68, 0.84, 0.16) infinite',
-          lg: 'cdRotate 32s cubic-bezier(0.32, 0.68, 0.84, 0.16) infinite',
+          base: 'cdRotate 24s cubic-bezier(0.32, 0.68, 0.84, 0.16) infinite',
+          lg: 'cdRotate 24s cubic-bezier(0.32, 0.68, 0.84, 0.16) infinite',
         },
         '@keyframes cdRotate': {
           '0%': { backgroundPosition: '0% 50%' },
@@ -66,11 +69,25 @@ const Home: NextPage = () => {
         <ArtWallList startIndex={1}/>
       </Box>
 
-      <footer>
-        <a href="" rel="noopener noreferrer" target="_blank">
-        Take Up Space is a media company and collective for culture-makers. We empower creatives through media & community experiences - spanning IRL, online & onchain.
-        </a>
-      </footer>
+      <Flex 
+        align='center' 
+        justify='center' 
+        textAlign='center' 
+        mx='19%'
+        py='3rem'
+        fontFamily='acumin-pro-extra-condensed, sans-serif'
+        fontSize={['h6', 'h5', null]}
+        color='#000'
+      >
+        <footer>
+          <Image
+            src={brandUrl}
+            height={['7.993rem', '11.994rem', '15.986rem']}
+            alt=''
+          /> 
+          <Text>Take Up Space is a media company and collective for culture-makers. <br />We empower creatives through media & community experiences - spanning IRL, online & onchain.</Text>
+        </footer>
+      </Flex>
     </Box>
   );
 };
