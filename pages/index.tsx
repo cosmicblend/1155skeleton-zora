@@ -61,7 +61,7 @@ const Home: NextPage = () => {
             textAlign="center"
           /> 
         </Flex>
-        <ArtWallList />
+        <ArtWallList startIndex={1}/>
       </Box>
 
       <footer>

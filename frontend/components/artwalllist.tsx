@@ -6,12 +6,12 @@ import {
     SimpleGrid
 } from '@chakra-ui/react';
 
-const ArtWallList = () => {
-    const sortedArt = artWallData.sort((a, b) => a.id - b.id);
+const ArtWallList = ({startIndex = 0}) => {
+  const sortedArt = artWallData.sort((a, b) => a.id - b.id);
 
   return (
     <SimpleGrid columns={[1, 2, null, null]} spacing="2rem">
-      {sortedArt.map((artItem, index) => (
+      {sortedArt.slice(startIndex).map((artItem, index) => (
         <ArtWall
           key={index}
           artTitle={artItem.artTitle}
