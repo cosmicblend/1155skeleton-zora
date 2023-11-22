@@ -14,8 +14,8 @@ const HeaderNav = () => {
     const [lastTime, setLastTime] = useState(Date.now());
 
     const easeRotation = (velocity: number) => {
-        const maxRotation = 720; // Max rotation in degrees
-        let rotation = velocity * 180; // Scale velocity to a usable value
+        const maxRotation = 1440; // Max rotation in degrees
+        let rotation = velocity * 135; // Scale velocity to a usable value
         if (rotation > maxRotation) rotation = maxRotation; // Limit the rotation
         return rotation;
     };

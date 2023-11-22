@@ -51,7 +51,9 @@ const Home: NextPage = () => {
             textAlign="center"
           /> 
         </Flex>
-        <Heading>manifesto here</Heading>
+        <Flex mb="7.993rem" mx={['0%', '19%']}>
+          <ArtWallList startIndex={0} itemCount={1} columnCount={1}/>
+        </Flex>
         <Flex align='center' justify='center'>
           <Image
             src={theArtistsUrl}

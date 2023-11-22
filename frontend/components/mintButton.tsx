@@ -166,7 +166,7 @@ function MintButton({ contractAddress, tokenId }: MintButtonProps) {
         <>
         <Stack mt={4} align="center" justifyContent="center" fontFamily="acumin-pro-extra-condensed, sans-serif" direction='row'>
           <Button 
-            w="10%" 
+            //w="10%" 
             onClick={decrementQuantity}
             borderRadius="0"
             backgroundColor="#fff"
@@ -176,9 +176,14 @@ function MintButton({ contractAddress, tokenId }: MintButtonProps) {
             pb={2}
             _hover={{bg:'#EBF3E6'}}
           >-</Button>
-          <Box w="10%" textAlign='center'>{quantityToMint}</Box>
+          <Box 
+            w="50px" 
+            textAlign='center'
+          >
+            {quantityToMint}
+          </Box>
           <Button 
-            w="10%" 
+            //w="10%" 
             onClick={incrementQuantity}
             borderRadius="0"
             backgroundColor="#fff"
@@ -198,7 +203,7 @@ function MintButton({ contractAddress, tokenId }: MintButtonProps) {
           color="#DF257E"
           fontSize="h5"
           _hover={{bg:'#fff'}}
-          w="70%"
+          w="159px"
           pb={1}
           >
             {isWalletConnected ? (isMinting ? "MINTING..." : "MINT") : "CONNECT WALLET"}
