@@ -23,16 +23,17 @@ const Home: NextPage = () => {
       w="100%"
       color="#423639"
       sx={{
-        bgGradient: 'radial(ellipse at center, #FFB07F 0%, #DF257E 32%, #F5F5F5 68%, #DFF3F4 84%, #F4F4DE 100%, #FFB07F 68%)',
-        backgroundSize: '200% 200%',
-        animation: { 
-          base: 'cdRotate 24s cubic-bezier(0.32, 0.68, 0.84, 0.16) infinite',
-          lg: 'cdRotate 24s cubic-bezier(0.32, 0.68, 0.84, 0.16) infinite',
-        },
-        '@keyframes cdRotate': {
-          '0%': { backgroundPosition: '0% 50%' },
-          '100%': { backgroundPosition: '200% 50%' },
-        },
+        //bgGradient: 'radial(ellipse at center, #FFB07F 0%, #DF257E 32%, #F5F5F5 68%, #DFF3F4 84%, #F4F4DE 100%, #FFB07F 68%)',
+        bgGradient: 'radial(ellipse at center, #DF257E 0%, #DF257E 32%, #FFB07F 68%, #DF257E 84%, #F4F4DE 100%, #DF257E 68%)',
+        backgroundSize: '300% 300%',
+        //animation: { 
+        //  base: 'cdRotate 24s cubic-bezier(0.32, 0.68, 0.84, 0.16) infinite',
+        //  lg: 'cdRotate 24s cubic-bezier(0.32, 0.68, 0.84, 0.16) infinite',
+        //},
+        //'@keyframes cdRotate': {
+        //  '0%': { backgroundPosition: '0% 50%' },
+        //  '100%': { backgroundPosition: '200% 50%' },
+        //},
       }}
     >
       <Head>
