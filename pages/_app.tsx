@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={tusTheme}>
       <WagmiConfig config={wagmiConfig}>
-        <RainbowKitProvider modalSize="compact" chains={chains}>
+        <RainbowKitProvider chains={chains}>
           <Component {...pageProps} />
         </RainbowKitProvider>
       </WagmiConfig>
